@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank login</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- css  -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+         <style>
+                *{
+        margin:0;
+        padding: 0;
+    }
+  body{
+    font-family: 'Roboto', sans-serif,'Roboto Condensed', sans-serif,'Roboto Slab', serif;
+      background-image: url("https://cdn.pixabay.com/photo/2021/07/06/19/26/drops-6392473_960_720.jpg");
+      
+      
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+}
+   header{
+    /* background-image: url("../images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    height: 400px;
+    width: 100%;
+    background-color: rgba(43, 40, 40, 0.6);
+    
+    } 
+
+.bodyShade{
+    background-color: rgba(0,0,0, 0.6);
+      height: 100vh;
+      width: 100%;
+   }
+  .logo{
+     text-shadow: 3px 3px black;
+     letter-spacing:1px;
+     font-weight:bolder;
+
+  }
+   label{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+     letter-spacing: 1px;
+   }
+   .font-monospace{
+    letter-spacing: 1px;
+   }
+   .form{
+      box-shadow: 5px 5px 5px black;
+     background-image: linear-gradient(
+    rgba(34, 34, 37, 0.5),
+    rgba(49, 54, 50, 0.5))
+    
+   }
+         </style>
+
+
+
+</head>
+<body class=" container-fluid">
+<div class="bodyShade " id="studentLogin" >
+    <nav class=" col d-flex flex-column  justify-content-center align-itmes-center me-auto" >
+        <div class="d-flex flex-wrap justify-content-center text-light">
+            <div class="me-2 text-uppercase fs-5">  <a href="exit.html" class="nav-link">EXIT</a> </div>
+            <div class="me-2 text-uppercase fs-5">  <a href="about.html US" class="nav-link">About US </a> </div>
+            </div>
+            <div class="mt-4 col " >
+               <h1 class="text-light text-center mt-4 mb-3  text-uppercase logo">Welcome In Mini Bank </h1>
+            </div>
+            <div class="form text-center d-flex justify-content-center align-itmes-center  mt-4 m-auto p-4 border border-1 rounded rounded-1 col" >
+       <div class= "row">
+             <h4 class="text-center fw-bold text-warning text-uppercase mt-2 mb-3">BANK LOGIN</h4>
+             
+                                 <div class="mt-4 mb-3">
+                                  <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"><a href="view.html" class="nav-link">Viewbalance </a>  </button>
+                                  
+                                    <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"> <a href="with.html" class="nav-link"> WithdrawMoney </a></button><br><br>
+                                     <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"><a href="dep.html" class="nav-link">DepositeMoney</a></button>
+                                    <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"> <a href="trans.html" class="nav-link">Transefer Funds </a></button><br>
+                                      <form action="passbook" method="post"><br>
+                                     <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase">ViewPassbook</button>
+                                    </form><br>  
+                                     <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"> <a href="change.html" class="nav-link">ChangeYourPin</a></button><br><br>
+                                      <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"> <a href="https://bankofmaharashtra.in/about-us" class="nav-link">About Us </a></button><br><br>
+                        
+                                     <form action="exit" method="get">
+                                     <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase">EXIT</button>
+                                    </form><br>
+                                    
+                              </div>
+
+                        
+                    </div> <!--col-->
+             </div>  <!-- row -->
+
+        </div>
+       </nav>
+     </div>
+     
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+               <form action="" class="">
+                
+                      
+
+ 
+                           
+                        </div>
+                      </form>
+                      <div class=" nav-item">
+                         <a href="#addminLogin" class="text-decoration-none nav-link text-light fw-bold  " style="letter-spacing: 1px;"> <span class="bi bi-person-lock"></span> Addmin Login</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+         -->

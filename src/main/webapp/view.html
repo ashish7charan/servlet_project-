@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank login</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- css  -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+         <style>
+                *{
+        margin:0;
+        padding: 0;
+    }
+  body{
+    font-family: 'Roboto', sans-serif,'Roboto Condensed', sans-serif,'Roboto Slab', serif;
+      background-image: url("https://c1.wallpaperflare.com/preview/905/619/738/dollar-flying-concept-business.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+}
+   header{
+    /* background-image: url("../images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    height: 400px;
+    width: 100%;
+    background-color: rgba(43, 40, 40, 0.6);
+    
+    } 
+
+.bodyShade{
+    background-color: rgba(0,0,0, 0.6);
+      height: 100vh;
+      width: 100%;
+   }
+  .logo{
+     text-shadow: 3px 3px black;
+     letter-spacing:1px;
+     font-weight:bolder;
+
+  }
+   label{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+     letter-spacing: 1px;
+   }
+   .font-monospace{
+    letter-spacing: 1px;
+   }
+   .form{
+      box-shadow: 5px 5px 5px black;
+     background-image: linear-gradient(
+    rgba(34, 34, 37, 0.5),
+    rgba(49, 54, 50, 0.5))
+    
+   }
+         </style>
+
+
+
+</head>
+<body class=" container-fluid">
+<div class="bodyShade " id="studentLogin" >
+    <nav class=" col d-flex flex-column  justify-content-center align-itmes-center me-auto" >
+        <div class="d-flex flex-wrap justify-content-center text-light">
+            <div class="me-2 text-uppercase fs-5">  <a href="#addminLogin" class="nav-link">home  </a> </div>
+            <div class="me-2 text-uppercase fs-5">  <a href="#about" class="nav-link">About </a> </div>
+            <div class="me-2 text-uppercase fs-5">  <a href="#studentLogin" class="nav-link">Login </a> </div>
+            <div class="me-2 text-uppercase fs-5">  <a href="view.html" class="nav-link">VIEW </a> </div>
+        </div>
+            <div class="mt-4 col " >
+               <h1 class="text-light text-center mt-4 mb-3  text-uppercase logo"> </h1>
+            </div>
+            <div class="form text-center d-flex justify-content-center align-itmes-center  mt-4 m-auto p-4 border border-1 rounded rounded-1 col" >
+       <div class= "row">
+             <h4 class="text-center fw-bold text-warning text-uppercase mt-2 mb-3">BANK LOGIN</h4>
+                    <div class="col">
+                               <form name="myform" action="vbal" action="post" onsubmit="validatePassword()">
+                     
+                                 <label for="pin" class="form-label text-light text-uppercase">
+                                    Enter your Pin:
+                                 </label>
+                                 <div class=" input-group">
+                                    <input type="password" class="form-control " name="pin"  required id="pin" placeholder="Enter Your Pin" onkeyup="numberonly(this)">
+                                    <span class="bi bi-lock fs-4 text-dark input-group-text"></span>
+                                 </div>
+
+                                 <div class="mt-4 mb-3">
+                                    <button type="submit" class="btn btn-primary fs-6 fw-bold font-monospace text-uppercase"> VIEW</button>
+                               
+                              </div>
+
+                               </form>
+                               
+                               <script type="text/javascript">
+                                 function numberonly(input)
+                                 {
+                                	 var num=/[^0-9]/gi;
+                                	 input.value=input.value.replace(num,"");
+                                 }
+                          </script>
+                          
+                          <script>
+
+                            var password = document.forms['myform']['pin']
+                            function validatePassword() {
+                            	  if (password.length!=4) {
+                            	    alert("Pin must be  4 characters long.");
+                            	    return false;
+                            	  }
+                            	  else return true;
+                            	}
+
+                      </script>
+                               
+                    </div> <!--col-->
+             </div>  <!-- row -->
+
+        </div>
+       </nav>
+     </div>
+     
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+               <form action="" class="">
+                
+                      
+
+ 
+                           
+                        </div>
+                      </form>
+                      <div class=" nav-item">
+                         <a href="#addminLogin" class="text-decoration-none nav-link text-light fw-bold  " style="letter-spacing: 1px;"> <span class="bi bi-person-lock"></span> Addmin Login</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+         -->
